@@ -1,0 +1,17 @@
+{
+  "name": "mediaquery-event",
+  "homepage": "https://github.com/rejas/mediaquery-event",
+  "authors": [
+    "Veeck <github@veeck.de>"
+  ],
+  "description": "get notifications when the mediaquery changes",
+  "main": "mqe.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
