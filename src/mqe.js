@@ -4,7 +4,7 @@
 export function init (options) {
     let mqs = options.mediaqueries;
 
-    let handleMediaChange = (mediaQueryList)  => {
+    let handleMediaChange = (mediaQueryList) => {
         let media = mqs.filter(function (el) {
             return el.media === mediaQueryList.media;
         });
@@ -14,11 +14,10 @@ export function init (options) {
         }
         media = media[0];
 
-        let event = new CustomEvent('mediaquery', {
-            detail: {
-                active: mediaQueryList.matches,
-                media: media.name
-            }
+        let event = document.createEvent("CustomEvent");
+        event.initCustomEvent('mediaquery', false, false, {
+            active: mediaQueryList.matches,
+            media: media.name
         });
 
         document.dispatchEvent(event);
