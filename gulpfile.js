@@ -1,10 +1,10 @@
-const gulp = require('gulp');
-const babel = require('gulp-babel');
+const gulp = require('gulp'),
+    babel = require('gulp-babel');
 
-gulp.task('default', () =>
-    gulp.src('src/mqe.js')
+gulp.task('default', () => {
+    return gulp.src('src/mqe.js')
         .pipe(babel({
-            presets: ['es2015']
+            presets: ['env']
         }))
-        .pipe(gulp.dest('dist'))
-);
+        .pipe(gulp.dest('dist'));
+});
