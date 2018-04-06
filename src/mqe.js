@@ -14,7 +14,7 @@ export function init (options) {
         }
         media = media[0];
 
-        let event = document.createEvent("CustomEvent");
+        let event = document.createEvent('CustomEvent');
         event.initCustomEvent('mediaquery', false, false, {
             active: mediaQueryList.matches,
             media: media.name

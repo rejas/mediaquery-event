@@ -10,6 +10,8 @@
     "url": "https://github.com/rejas/mediaquery-event/issues"
   },
   "scripts": {
+    "check": "eslint src/*.js",
+    "fix": "eslint --fix src/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^7.0.1"
   }
