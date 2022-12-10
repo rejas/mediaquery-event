@@ -4,7 +4,7 @@ const gulp = require('gulp'),
 gulp.task('default', () => {
     return gulp.src('src/mqe.js')
         .pipe(babel({
-            presets: ['env']
+            presets: ['@babel/env']
         }))
         .pipe(gulp.dest('dist'));
 });
