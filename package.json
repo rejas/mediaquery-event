@@ -22,7 +22,7 @@
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
     "eslint": "^8.29.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0"
   }
 }
